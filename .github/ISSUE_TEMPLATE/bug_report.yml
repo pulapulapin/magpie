@@ -1,0 +1,31 @@
+name: Bug report / Bug 反馈
+description: Something doesn't work as expected. / 有地方不对劲。
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not include personal information. The "Copy diagnostics" text from Help already blanks out links, emails and keys.
+        请不要填写个人信息。帮助里的“复制诊断信息”已自动抹掉链接、邮箱和授权码。
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition / 版本
+      options: ["Mac App Store", "Direct / 直销版", "Not sure / 不确定"]
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you do, what did you expect, what happened? / 你做了什么、期望什么、发生了什么？
+    validations: { required: true }
+  - type: input
+    id: versions
+    attributes:
+      label: macOS version and Magpie version / macOS 版本和 Magpie 版本
+      placeholder: "macOS 15.2, Magpie 1.0"
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics (Help → Download engine and diagnostics → Copy diagnostics) / 诊断信息
+      render: text
