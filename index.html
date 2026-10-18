@@ -1,7 +1,7 @@
 <!doctype html><meta charset="utf-8"><title>Magpie</title>
 <script>
 var l=(navigator.language||"en").toLowerCase();
-var t=l.indexOf("zh")===0?"zh":"en";
+var t=l.indexOf("zh")===0?"zh":l.indexOf("ja")===0?"ja":l.indexOf("ko")===0?"ko":"en";
 location.replace("./"+t+"/index.html");
 </script>
-<noscript><a href="en/index.html">English</a> · <a href="zh/index.html">中文</a></noscript>
+<noscript><a href="en/index.html">English</a> · <a href="zh/index.html">中文</a> · <a href="ja/index.html">日本語</a> · <a href="ko/index.html">한국어</a></noscript>
